@@ -3,7 +3,6 @@ global class WebhookCallout{
     public static void postRequest(List<webhookCalloutInputs> requestList) {
         for (webhookCalloutInputs flowObject : requestList) {
             postToUrl(JSON.serialize(flowObject.inputObject),flowObject.endpoint);
-            //https://hooks.zapier.com/hooks/catch/1256995/o79ynat/
         }
     }
     
